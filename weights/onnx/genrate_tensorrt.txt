@@ -1,0 +1,3 @@
+/usr/src/tensorrt/bin/trtexec  --onnx=number_recog_x_3_48_x.onnx --minShapes=x:1x3x48x8 --optShapes=x:4x3x48x160  --maxShapes=x:8x3x48x320  --workspace=2048 --saveEngine=number_recog_x_3_48_x.engine  --fp16
+
+/usr/src/tensorrt/bin/trtexec  --onnx=text_det_x_3_x_x.onnx --minShapes=x:1x3x32x32 --optShapes=x:8x3x96x160  --maxShapes=x:16x3x960x960  --workspace=2048 --saveEngine=text_det_x_3_x_x.engine  --fp16
